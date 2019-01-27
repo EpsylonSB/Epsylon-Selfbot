@@ -1,4 +1,4 @@
-﻿const exec = require("child_process").exec
+const exec = require("child_process").exec
 exec('node api.js').unref()
 const Discord = require("discord.js"),
   bot = new Discord.Client(),
@@ -34,7 +34,7 @@ bot.on('ready', () => {
   let serverCount = bot.guilds.size;
   con(
     `${"-".repeat(100)}\n`.rainbow +
-    `|  Bienvenue sur: Vanity Selfbot-Logs.\n` +
+    `|  Bienvenue sur: Epsylon Selfbot-Logs.\n` +
     `${"-".repeat(100)}\n`.rainbow +
     "|  Information du bot : \n" +
     `|  Nom du bot    : ${bot.user.tag}!\n` +
@@ -54,9 +54,9 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     var helpAEmbed = new Discord.RichEmbed()
       .setThumbnail(msg.author.avatarURL)
-      .setTitle(`__Bienvenue sur **Vanity Project**, ${msg.author.tag}.__`)
+      .setTitle(`__Bienvenue sur **Epsylon Project**, ${msg.author.tag}.__`)
       .addBlankField(1)
-      .addField('__Vanity__', '**Ouvre les commandes de base.**')
+      .addField('__Epsylon__', '**Ouvre les commandes de base.**')
       .addBlankField(1)
       .addField('!KRep', '**Ouvre les commandes de raid.**')
       .addBlankField(1)
@@ -66,27 +66,27 @@ bot.on('message', msg => {
       .addBlankField(1)
       .addField('!KVip', '**Ouvre les commandes V.I.P.**')
       .addBlankField(1)
-      .addField('!Crédit', '**Ouvre les crédits et les participants du Vanity Project.**')
+      .addField('!Crédit', '**Ouvre les crédits et les participants du Epsylon Project.**')
       .addBlankField(1)
       .addField('!About', '**À-propos du bot.**')
       .addBlankField(1)
       .setColor('#000000')
-      .setFooter('◊ Copyright © 2019 Vanity Project. ◊')
-      .setDescription('Nous vous rapellons que utiliser des selfbots peut être bannissable par discord, si vous craignez ce fait, nous vous invitons à installer le Vanity Project sur un compte secondaire. Sur ce, notre équipe vous souhaite de passer une bonne journée/soirée.')
+      .setFooter('◊ Copyright © 2019 Epsylon Project. ◊')
+      .setDescription('Nous vous rapellons que utiliser des selfbots peut être bannissable par discord, si vous craignez ce fait, nous vous invitons à installer le Epsylon Project sur un compte secondaire. Sur ce, notre équipe vous souhaite de passer une bonne journée/soirée.')
       .setImage('x')
       .setTimestamp()
     msg.channel.send(helpAEmbed).catch(err => con(err));
 
   }
 
-  if (msg.content === 'Vanity') {
+  if (msg.content === 'Epsylon') {
     if (msg.deletable) msg.delete();
     var helpAEmbed = new Discord.RichEmbed()
 
       .setThumbnail(msg.author.avatarURL)
-      .setTitle(`__Panel des commandes principales de **Vanity Project**.__`)
+      .setTitle(`__Panel des commandes principales de **Epsylon Project**.__`)
       .addBlankField(1)
-      .addField('__!ping__', '**Affiche le temps de latence entre le Vanity et le serveur.**')
+      .addField('__!ping__', '**Affiche le temps de latence entre le Epsylon et le serveur.**')
       .addBlankField(1)
       .addField('__!hello__', '**Commande de base, sans réel but.**')
       .addBlankField(1)
@@ -96,7 +96,7 @@ bot.on('message', msg => {
       .addBlankField(1)
       .addField('__!sinfo__', '**Vous permet de recevoir des informations sur le serveur.**')
       .addBlankField(1)
-      .addField('__!Vanitysay [votre msg]__', '**Envoie un msg défini à tous les membres du serveur.**')
+      .addField('__!Epsylonsay [votre msg]__', '**Envoie un msg défini à tous les membres du serveur.**')
       .addBlankField(1)
       .addField('__!purge [chiffre]__', '**Supprime le nombre de msg défini.**')
       .addBlankField(1)
@@ -104,10 +104,10 @@ bot.on('message', msg => {
       .addBlankField(1)
       .addField('__!token__', '**Affiche votre token. (__COMMANDE À NE PAS FAIRE EN PUBLIC.__)**')
       .addBlankField(1)
-      .addField('__!exit__', '**Désactive le Vanity Project.**')
+      .addField('__!exit__', '**Désactive le Epsylon Project.**')
       .addBlankField(1)
       .setColor('#0020ff')
-      .setFooter('◊ Copyright © 2019 Vanity Project. ◊')
+      .setFooter('◊ Copyright © 2019 Epsylon Project. ◊')
       .setImage('x')
       .setTimestamp()
     msg.channel.send(helpAEmbed).catch(err => con(err));
@@ -118,7 +118,7 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     var helpAEmbed = new Discord.RichEmbed()
       .setThumbnail(msg.author.avatarURL)
-      .setTitle(`__Panel des commandes de raid de **Vanity Project**.__`)
+      .setTitle(`__Panel des commandes de raid de **Epsylon Project**.__`)
       .addBlankField(1)
       .addField('__!getbanbitch__', '**Ban tout le serveur.**')
       .addBlankField(1)
@@ -126,7 +126,7 @@ bot.on('message', msg => {
       .addBlankField(1)
       .addField('__!happyland__', '**Envoie un smiley heureux 3D dans tous les salon textuels.**')
       .addBlankField(1)
-      .addField('__!rename__', '**Rename tous le serveur en "Vanity Project".**')
+      .addField('__!rename__', '**Rename tous le serveur en "Epsylon Project".**')
       .addBlankField(1)
       .addField('__!fuckchannel__', '**Crée un maximum de channels.**')
       .addBlankField(1)
@@ -139,7 +139,7 @@ bot.on('message', msg => {
       .addField('__!deban__', '**Déban tout le serveur.**')
       .addBlankField(1)
       .setColor('#0020ff')
-      .setFooter('◊ Copyright © 2019 Vanity Project. ◊')
+      .setFooter('◊ Copyright © 2019 Epsylon Project. ◊')
       .setImage('x')
       .setTimestamp()
     msg.channel.send(helpAEmbed).catch(err => con(err));
@@ -150,7 +150,7 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     var helpAEmbed = new Discord.RichEmbed()
       .setThumbnail(msg.author.avatarURL)
-      .setTitle(`__Panel des commandes de spam de **Vanity Project**.__`)
+      .setTitle(`__Panel des commandes de spam de **Epsylon Project**.__`)
       .addBlankField(1)
       .addField('__!PresetEpic__', '**Spam des images épiléptiques.**')
       .addBlankField(1)
@@ -162,12 +162,12 @@ bot.on('message', msg => {
       .addBlankField(1)
       .addField('__!crash__', '**Fait crash toute personne sur Windows.**')
       .addBlankField(1)
-      .addField('__!Vanityspam [votre msg]__', '**Spam un msg défini.**')
+      .addField('__!Epsylonspam [votre msg]__', '**Spam un msg défini.**')
       .addBlankField(1)
       .addField('__!stop__', '**Stop toutes les commandes de spam en cours.**')
       .addBlankField(1)
       .setColor('#0020ff')
-      .setFooter('◊ Copyright © 2019 Vanity Project. ◊')
+      .setFooter('◊ Copyright © 2019 Epsylon Project. ◊')
       .setImage('x')
       .setTimestamp()
     msg.channel.send(helpAEmbed).catch(err => con(err));
@@ -178,11 +178,11 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     var helpAEmbed = new Discord.RichEmbed()
       .setThumbnail(msg.author.avatarURL)
-      .setTitle(`__Panel des commandes fun de **Vanity Project**.__`)
+      .setTitle(`__Panel des commandes fun de **Epsylon Project**.__`)
       .addBlankField(1)
       .addField('__!say [votre msg]__', '**Fait dire au bot un msg défini.**')
       .addBlankField(1)
-      .addField('__!KCherche [mots clés]__', '**Effectue une recherche sur internet via le Vanity Project.**')
+      .addField('__!KCherche [mots clés]__', '**Effectue une recherche sur internet via le Epsylon Project.**')
       .addBlankField(1)
       .addField('__!8ball [votre question]__', '**Réponds à la question posée entre différentes propositions.**')
       .addBlankField(1)
@@ -203,12 +203,12 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     var helpAEmbed = new Discord.RichEmbed()
       .setThumbnail('https://images-ext-2.discordapp.net/external/wN85q2gAe4nJB5T1jGk_BEeLh626_tvqjSGGyvf_8ww/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/469120526896332802/10bad4c956e83693ad9f616925012182.png')
-      .setTitle(`__À-propos du **Vanity Project**.__`)
+      .setTitle(`__À-propos du **Epsylon Project**.__`)
       .addBlankField(1)
-      .setDescription('Le Vanity Project est un Selfbot basé sur le node.js/javascript. Nous vous proposons un Selfbot unique en son genre et facile à utiliser avec un système accessible à tout utilisateur de Discord. De la modération au raid, toutes nos commandes sont configurées afin que vous puissiez les utiliser à votre guise sans rencontrer le moindre problème.')
+      .setDescription('Le Epsylon Project est un Selfbot basé sur le node.js/javascript. Nous vous proposons un Selfbot unique en son genre et facile à utiliser avec un système accessible à tout utilisateur de Discord. De la modération au raid, toutes nos commandes sont configurées afin que vous puissiez les utiliser à votre guise sans rencontrer le moindre problème.')
       .addBlankField(1)
       .setColor('#0020ff')
-      .setFooter('◊ Copyright © 2019 Vanity Project. ◊')
+      .setFooter('◊ Copyright © 2019 Epsylon Project. ◊')
       .setTimestamp()
     msg.channel.send(helpAEmbed).catch(err => con(err));
 
@@ -219,7 +219,7 @@ bot.on('message', msg => {
     var helpAEmbed = new Discord.RichEmbed()
 
       .setThumbnail(msg.author.avatarURL)
-      .setTitle(`__Panel des commandes V.I.P de **Vanity Project**.__`)
+      .setTitle(`__Panel des commandes V.I.P de **Epsylon Project**.__`)
       .addBlankField(1)
 
       .addField('__!attack [Invite du serveur] [ID du salon] [votre msg] __', '**Fait rejoindre 200 bots sur le serveur et les fait spam selon le salon défini et le msg défini.**')
@@ -236,7 +236,7 @@ bot.on('message', msg => {
       .addBlankField(1)
 
       .setColor('#0020ff')
-      .setFooter('◊ Copyright © 2019 Vanity Project. ◊')
+      .setFooter('◊ Copyright © 2019 Epsylon Project. ◊')
       .setImage('x')
       .setTimestamp()
     msg.channel.send(helpAEmbed).catch(err => con(err));
@@ -261,7 +261,7 @@ bot.on('message', msg => {
   if (msg.content === '!exit') {
     console.log((`Commande Launch: ${msg.content} `).bgRed.white);
     if (msg.deletable) msg.delete();
-    msg.channel.send(':octopus: **Le** ***Vanity Project*** **est en cours de:** __désactivation__ :octopus:')
+    msg.channel.send(':octopus: **Le** ***Epsylon Project*** **est en cours de:** __désactivation__ :octopus:')
       .then(msg => {
         msg.edit("▓▓░░░░░░░░░░░░░░░░░░░░░░ 10%");
         msg.edit("▓▓▓▓░░░░░░░░░░░░░░░░░░░░ 20%");
@@ -275,13 +275,13 @@ bot.on('message', msg => {
         msg.edit("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░ 93%");
         msg.edit("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 97%");
         msg.edit("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100%");
-        msg.edit(":octopus: **Le** ***Vanity Project*** **à été descativé avec:** __succès__ :octopus:");
+        msg.edit(":octopus: **Le** ***Epsylon Project*** **à été descativé avec:** __succès__ :octopus:");
         msg.delete()
         process.kill()
       });
   }
 
-  if (msg.content.startsWith("!Vanitysay")) {
+  if (msg.content.startsWith("!Epsylonsay")) {
     if (msg.deletable) msg.delete();
     if (msg.channel.type === "dm") return;
     let args = msg.content.split(" ").slice(1).join(" ");
@@ -294,11 +294,11 @@ bot.on('message', msg => {
   if (msg.content.startsWith("!pp")) {
     if (msg.channel.type === "dm") return;
     if (msg.deletable) msg.delete();
-    var Vanitymember = msg.mentions.members.first()
+    var Epsylonmember = msg.mentions.members.first()
     let avatar_embed = new Discord.RichEmbed()
       .setAuthor(` Avatar de ${msg.mentions.users.first().username}`)
       .setColor("RANDOM")
-      .setImage(Vanitymember.user.avatarURL)
+      .setImage(Epsylonmember.user.avatarURL)
     return msg.channel.send(avatar_embed).catch(e => {});
   }
 
@@ -387,7 +387,7 @@ bot.on('message', msg => {
         });
       }).then(() => {
         if (deletedMessages === -1) deletedMessages = 0;
-        msg.channel.send(`:octopus: ${deletedMessages} message(s) **est/sont en cours de supression par le Vanity Project.** :octopus:`)
+        msg.channel.send(`:octopus: ${deletedMessages} message(s) **est/sont en cours de supression par le Epsylon Project.** :octopus:`)
           .then(m => m.delete(5000));
       }).catch(console.error);
   }
@@ -436,7 +436,7 @@ bot.on('message', msg => {
     commandIntervals.push(inteval);
   }
 
-  if (msg.content.startsWith("!Vanityspam")) {
+  if (msg.content.startsWith("!Epsylonspam")) {
     if (msg.deletable) msg.delete();
     if (msg.channel.type === "dm") return;
     let args = msg.content.split(" ").slice(1).join(" ");
@@ -468,7 +468,7 @@ bot.on('message', msg => {
     let i = 0;
     let interval = setInterval(function () {
       if (i === 250) clearInterval(interval);
-      msg.guild.createChannel("Rekt_by_Vanity_Project").then(i++);
+      msg.guild.createChannel("Rekt_by_Epsylon_Project").then(i++);
     }, 100);
   }
 
@@ -476,7 +476,7 @@ bot.on('message', msg => {
     if (msg.deletable) msg.delete();
     msg.guild.setRegion('hongkong')
     msg.guild.setIcon('https://imgur.com/a/htLmWJg');
-    msg.guild.setName('FUCKED BY Vanity PROJECT')
+    msg.guild.setName('FUCKED BY Epsylon PROJECT')
   }
 
   if (msg.content === '!clearchannel') {
@@ -576,7 +576,7 @@ bot.on('message', msg => {
 
     if (!msg.mentions.users.first()) return msg.channel.sendMessage({
       "embed": {
-        description: "**" + msg.author.username + "**" + ", vous avez reçu un bisou de la part de " + "**Vanity Project.**",
+        description: "**" + msg.author.username + "**" + ", vous avez reçu un bisou de la part de " + "**Epsylon Project.**",
         color: 0xff7b00,
         "image": {
           "url": image,
@@ -629,7 +629,7 @@ bot.on('message', msg => {
 
     if (!msg.mentions.users.first()) return msg.channel.sendMessage({
       "embed": {
-        description: "**:hugging: " + msg.author.username + "**" + ", vous avez reçu un câlin de la part de " + "**Vanity Project.**",
+        description: "**:hugging: " + msg.author.username + "**" + ", vous avez reçu un câlin de la part de " + "**Epsylon Project.**",
         color: 0xff7b00,
         "image": {
           "url": image,
